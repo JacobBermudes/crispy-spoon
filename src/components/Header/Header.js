@@ -6,8 +6,7 @@ import {
   InputBase,
   Menu,
   MenuItem,
-  Fab,
-  Link
+  Fab
 } from "@material-ui/core";
 import {
   Menu as MenuIcon,
@@ -140,7 +139,6 @@ export default function Header(props) {
           React Material Admin
         </Typography>
         <div className={classes.grow} />
-        <Button component={Link} href="https://flatlogic.com/templates/react-material-admin-full" variant={"outlined"} color={"secondary"} className={classes.purchaseBtn}>Unlock full version</Button>
         <div
           className={classNames(classes.search, {
             [classes.searchFocused]: isSearchOpen,
@@ -289,15 +287,7 @@ export default function Header(props) {
         >
           <div className={classes.profileMenuUser}>
             <Typography variant="h4" weight="medium">
-              John Smith
-            </Typography>
-            <Typography
-              className={classes.profileMenuLink}
-              component="a"
-              color="primary"
-              href="https://flatlogic.com"
-            >
-              Flalogic.com
+              Jacob Bermudes
             </Typography>
           </div>
           <MenuItem
